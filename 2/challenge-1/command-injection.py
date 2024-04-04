@@ -32,3 +32,4 @@ def path_exists_not_sanitizer():
     path = request.args.get('path', '')
     if os.path.exists(path):
         os.system("ls " + path) # $result=BAD
+        os.system("cd " + path) # $result=BAD
